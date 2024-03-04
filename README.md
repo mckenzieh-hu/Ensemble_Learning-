@@ -4,10 +4,15 @@
 This project aims to estimate daily price variations of short-term electricity futures contracts in France and Germany using weather, energy, and commercial data. The challenge focuses on understanding the impact of various factors, including local weather conditions, global phenomena, and geopolitical events on electricity prices.
 
 ## Data Description
-We utilize three CSV datasets: `X_train` for training inputs, `Y_train` for training outputs, and `X_test` for test inputs, covering weather measurements, commodity price changes, energy production measures, and electricity usage metrics.
+We use three CSV datasets: `X_train` for training inputs, `Y_train` for training outputs, and `X_test` for test inputs, covering weather measurements, commodity price changes, energy production measures, and electricity usage metrics.
 
 NB: The input data X_train and X_test represent the same explanatory variables but over two different time periods.
 ## Methodologies
+
+### Exploratory Data Analysis (EDA)
+The EDA phase involved:
+- **Data Visualization**: Using `matplotlib` and `seaborn` for visualizing distributions of various features and target variables.
+- **Correlation Analysis**: Analyzing correlations between features and the target variable to understand relationships and potential predictors.
 
 ### Data Pre-processing
 - **Outlier Removal**: Applied Z-Score method to improve model performance by identifying and removing outliers.
